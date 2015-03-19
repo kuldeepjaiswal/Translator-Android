@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_alignRight="@+id/english"
+        android:text="@string/get"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/english"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="ENTER SENTENCE" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/english"
+        android:layout_alignLeft="@+id/english"
+        android:layout_marginBottom="21dp"
+        android:text="@string/ques"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/b1"
+        android:layout_centerVertical="true"
+        android:text="@string/ans"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/planets_spinner"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/b1"
+        android:layout_toLeftOf="@+id/imageButton1" />
+
+    <EditText
+        android:id="@+id/hindi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/planets_spinner"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="38dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
